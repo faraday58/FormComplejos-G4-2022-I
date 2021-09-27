@@ -19,7 +19,10 @@ namespace ComplejosLibreria
             return c3;
         }
 
-
+        public override string ToString()
+        {
+            return  real.ToString() + " + " +imaginaria.ToString() + "i";
+        }
 
 
     }

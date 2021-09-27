@@ -162,6 +162,7 @@ namespace FormComplejos_G4_2022_I
             this.btnSumar.TabIndex = 2;
             this.btnSumar.Text = "Sumar";
             this.btnSumar.UseVisualStyleBackColor = true;
+            this.btnSumar.Click += new System.EventHandler(this.btnSumar_Click);
             // 
             // Form1
             // 
