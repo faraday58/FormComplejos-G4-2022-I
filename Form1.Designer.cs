@@ -29,6 +29,7 @@ namespace FormComplejos_G4_2022_I
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtbRelaComplejo1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtbImaginariaComplejo1 = new System.Windows.Forms.TextBox();
@@ -44,6 +45,8 @@ namespace FormComplejos_G4_2022_I
             this.label9 = new System.Windows.Forms.Label();
             this.btnSumar = new System.Windows.Forms.Button();
             this.btnConjugar = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtbRelaComplejo1
@@ -64,7 +67,7 @@ namespace FormComplejos_G4_2022_I
             // 
             // txtbImaginariaComplejo1
             // 
-            this.txtbImaginariaComplejo1.Location = new System.Drawing.Point(290, 232);
+            this.txtbImaginariaComplejo1.Location = new System.Drawing.Point(294, 233);
             this.txtbImaginariaComplejo1.Name = "txtbImaginariaComplejo1";
             this.txtbImaginariaComplejo1.Size = new System.Drawing.Size(100, 29);
             this.txtbImaginariaComplejo1.TabIndex = 0;
@@ -175,6 +178,10 @@ namespace FormComplejos_G4_2022_I
             this.btnConjugar.UseVisualStyleBackColor = true;
             this.btnConjugar.Click += new System.EventHandler(this.btnConjugar_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -196,7 +203,8 @@ namespace FormComplejos_G4_2022_I
             this.Controls.Add(this.txtbRealComplejo2);
             this.Controls.Add(this.txtbRelaComplejo1);
             this.Name = "Form1";
-            this.Text = "Form1";            
+            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,6 +227,7 @@ namespace FormComplejos_G4_2022_I
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Button btnConjugar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
