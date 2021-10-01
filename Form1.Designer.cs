@@ -43,6 +43,7 @@ namespace FormComplejos_G4_2022_I
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnSumar = new System.Windows.Forms.Button();
+            this.btnConjugar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtbRelaComplejo1
@@ -164,11 +165,22 @@ namespace FormComplejos_G4_2022_I
             this.btnSumar.UseVisualStyleBackColor = true;
             this.btnSumar.Click += new System.EventHandler(this.btnSumar_Click);
             // 
+            // btnConjugar
+            // 
+            this.btnConjugar.Location = new System.Drawing.Point(133, 305);
+            this.btnConjugar.Name = "btnConjugar";
+            this.btnConjugar.Size = new System.Drawing.Size(191, 64);
+            this.btnConjugar.TabIndex = 3;
+            this.btnConjugar.Text = "Conjugar";
+            this.btnConjugar.UseVisualStyleBackColor = true;
+            this.btnConjugar.Click += new System.EventHandler(this.btnConjugar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1474, 683);
+            this.Controls.Add(this.btnConjugar);
             this.Controls.Add(this.btnSumar);
             this.Controls.Add(this.lbSumaComplejo);
             this.Controls.Add(this.label4);
@@ -184,7 +196,7 @@ namespace FormComplejos_G4_2022_I
             this.Controls.Add(this.txtbRealComplejo2);
             this.Controls.Add(this.txtbRelaComplejo1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Form1";            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,6 +218,7 @@ namespace FormComplejos_G4_2022_I
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnSumar;
+        private System.Windows.Forms.Button btnConjugar;
     }
 }
 

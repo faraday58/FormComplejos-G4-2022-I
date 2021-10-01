@@ -19,6 +19,13 @@ namespace ComplejosLibreria
             return c3;
         }
 
+        public static Complejo operator ~(Complejo c1 )
+        {
+            c1.imaginaria = -c1.imaginaria;
+            return c1;
+        }
+
+
         public override string ToString()
         {
             return  real.ToString() + " + " +imaginaria.ToString() + "i";

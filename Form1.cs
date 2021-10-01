@@ -20,11 +20,34 @@ namespace FormComplejos_G4_2022_I
 
         private void btnSumar_Click(object sender, EventArgs e)
         {
-            Complejo c1 = new Complejo(float.Parse(txtbRelaComplejo1.Text),float.Parse(txtbImaginariaComplejo1.Text));
-            Complejo c2 = new Complejo(float.Parse(txtbRealComplejo2.Text), float.Parse(txtbImaginariaComplejo2.Text));
-            Complejo c3 = c1 + c2;
-            
-            lbSumaComplejo.Text = c3.ToString();
+            try
+            {
+                Complejo c1 = new Complejo(float.Parse(txtbRelaComplejo1.Text), float.Parse(txtbImaginariaComplejo1.Text));
+                Complejo c2 = new Complejo(float.Parse(txtbRealComplejo2.Text), float.Parse(txtbImaginariaComplejo2.Text));
+                Complejo c3 = c1 + c2;
+
+                lbSumaComplejo.Text = c3.ToString();
+            }
+            catch(FormatException error)
+            {
+                MessageBox.Show("Ingresa un número. \n   "+ error.Message);
+            }
+
+            catch(Exception error)
+            {
+                MessageBox.Show("Error " + error.Message);
+            }
         }
+
+        private void btnConjugar_Click(object sender, EventArgs e)
+        {
+            Complejo c1 = new Complejo(float.Parse(txtbRelaComplejo1.Text), float.Parse(txtbImaginariaComplejo1.Text));
+            c1 = ~c1;
+
+            lbSumaComplejo.Text = c1.ToString();
+
+        }
+
+        
     }
 }
